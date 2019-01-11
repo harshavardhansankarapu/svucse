@@ -4,17 +4,26 @@
         <title>Puppy</title>
         <style>
             body{
-                background-color: grey;
+                background-color:deepskyblue;
                 color: azure;
             }
         </style>
     </head>
     <body>
-        <input type="button" value="bowbow" onclick="doThis()" >
+        <input type="button" value="Change Colour" onclick="doThis()" >
     </body>
     <script type="text/javascript">
+        var flag=0;
         function doThis(){
-            document.write("Pavan is a kaam boy");
+            if(flag==0)
+            {
+                document.body.style.background = "yellow";
+                flag=1;
+            }
+            else if(flag==1){
+                document.body.style.background = "red";
+                flag=0;
+            }
         }
     </script>
 </html>

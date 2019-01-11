@@ -6,11 +6,27 @@
             body{
                 background-color:deepskyblue;
                 color: azure;
+                text-align: center;
+            }
+
+            h1{
+                font-size: 50px;
+            }
+
+            #downimg{
+                cursor: pointer;
             }
         </style>
     </head>
     <body>
+        <h1>SVU CSE</h1>
         <input type="button" value="Change Colour" onclick="doThis()" >
+        <br>
+        <br>
+        <input type="button" value="BTech Syllabus" onclick="loadDoc()">
+        <br>
+        <br>
+        <img id="downimg" src="download.png" width="150px" onclick="download()"> 
     </body>
     <script type="text/javascript">
         var flag=0;
@@ -25,5 +41,19 @@
                 flag=0;
             }
         }
+
+        function loadDoc(){
+            window.open("https://drive.google.com/open?id=1s4Br2WMahIh6rar6B_PHLMo3fxo4NVhf");
+        }
+
+        function download(){
+            window.open("https://drive.google.com/uc?export=download&id=1s4Br2WMahIh6rar6B_PHLMo3fxo4NVhf");
+        }
+
+        /*
+        function changeMousePointer(){
+            document.getElementById(downimg).style.cursor = "pointer";
+        }
+        */
     </script>
 </html>
